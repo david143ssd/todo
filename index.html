@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Kanit:wght@400;900&family=Poppins:ital,wght@1,900&display=swap');
+        </style>
+    <style>
+                  *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Dhurjati', sans-serif;
+         font-family: 'Kanit', sans-serif;
+
+    }
+         body{
+        width: 100vw;
+        height: 100vh;
+    }
+        .main{
+
+            margin-top: 15%;
+            border-style:solid ;
+            width: 400px;
+            margin-left: 30%;
+            border-radius: 5%;
+            padding: 20px;
+            background-color: white;
+            -webkit-box-shadow: -2px 11px 30px -18px rgba(23,7,23,1);
+         -moz-box-shadow: -2px 11px 30px -18px rgba(23,7,23,1);
+          box-shadow: -2px 11px 30px -18px rgba(23,7,23,1);
+          border-color: white;
+            
+        }
+        li{
+            -webkit-box-shadow: -4px -1px 29px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px -1px 29px -9px rgba(0,0,0,0.75);
+box-shadow: -4px -1px 29px -9px rgba(0,0,0,0.75);
+            background-color: white;
+            border-color: aliceblue;
+            border-radius: 5%;
+            text-align: center; 
+            list-style: none;
+            text-transform: capitalize;
+            margin-right: 15%;
+            border-style:solid ;
+            margin-left: 450px;
+            margin-right: 700px;
+            margin-top: 5px;
+            border-color: rgb(90, 86, 86)6, 20, 20);
+        }
+        #add{
+            padding: 5px;
+            border-radius: 5px;
+            border-color: none;
+            background-color: rgb(245, 9, 9);
+            color: white;
+        }
+       @media (max-width:600px)
+        {
+            body{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    } 
+    li{
+            -webkit-box-shadow: -4px -1px 29px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px -1px 29px -9px rgba(0,0,0,0.75);
+box-shadow: -4px -1px 29px -9px rgba(0,0,0,0.75);
+            border-color: aliceblue;
+            border-radius: 5%;
+            list-style: none;
+            text-transform: capitalize;
+            border-style:solid ;
+            margin-top: 5px;
+            margin: auto;
+            margin-top: 5%;
+            margin-right: 100px;
+        }
+ .main{
+width: 250px;
+margin: auto;
+margin-top: 5%;
+border-style:solid ;
+border-radius: 5%;
+-webkit-box-shadow: -2px 11px 30px -18px rgba(23,7,23,1);
+-moz-box-shadow: -2px 11px 30px -18px rgba(23,7,23,1);
+box-shadow: -2px 11px 30px -18px rgba(23,7,23,1);
+border-color: white;
+}  
+}
+    </style>
+</head>
+<body>
+    <div class="main">  
+      ADD TO DO LIST
+        <input type="text" id="input" placeholder="Enter something">
+<input type="button" value="ADD" id="add" onclick="add();">
+    </div>
+
+
+
+
+<!--------jAvascript code-->
+    <script>
+        function add(){
+            var main=document.getElementsByClassName('main');
+          var value=document.getElementById("input");
+          const para = document.createElement("li");
+          para.innerText =value.value;
+          document.body.appendChild(para);
+
+        }
+    </script>
+</body>
+</html>
